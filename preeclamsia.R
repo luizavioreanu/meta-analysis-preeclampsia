@@ -25,7 +25,7 @@ preeclampsia <- data.frame(study, e.T, n.T, p.T, e.C, n.C, p.C)
 # how to solve it:
 length(study)
 
-#Create anlysis object
+#Create analysis object
 
 a <- metabin(event.e = e.T,
              n.e = n.T,
@@ -34,20 +34,22 @@ a <- metabin(event.e = e.T,
              studlab = study,
              data = preeclampsia,
              sm = "OR",         # choosen effect: odds ratio
-             method = "MH") 
+             method = "MH")     # choosen method:Mantel-Haenszel 
 summary(a)
 
 
 forest(a)
-
+#qq plot
 qqnorm(a$TE/a$seTE)
 qqline(a$TE/a$seTE)
 
+# verification bias methods:
+#1
 x<-metabias(a,method="rank",k.min=9)
 x
-
+#2
 y<-metabias(a,method="peters",k.min=9)
 y
-
+#3
 tf1<-trimfill(a)
 tf1
