@@ -34,9 +34,6 @@ This repository contains the code and dataset for a meta-analysis based on 9 pub
   - Peters: *p* = 0.5080 (not significant)  
   - Trim-and-fill: Adjusted OR = 0.66 [0.42–1.04], *p* = 0.0724
 
-##  Repository Structure
-
-
 ##  Visualization
 - Forest plot and QQ plot generated using `meta` and `metafor` packages
 This forest plot visualizes the individual study odds ratios and the combined estimate:
