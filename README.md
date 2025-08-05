@@ -50,6 +50,13 @@ Residual analysis to check normality of standardized effects:
 ## Interpretation
 This meta-analysis provides statistically significant evidence supporting the treatment’s effectiveness in reducing preeclampsia risk. However, due to the high heterogeneity (I² > 70%), interpretation should be made using the random-effects model. No clear evidence of publication bias was found, though one potentially missing study was suggested by the trim-and-fill method.
 
+## Reflection
+
+This analysis allowed me to apply key meta-analysis concepts such as odds ratio estimation, heterogeneity assessment, and bias testing. I learned to choose appropriate models based on data variability and to interpret results cautiously when heterogeneity is high.
+
+This small-scale project demonstrates the application of statistical methods to real-world clinical questions, and represents one of the first steps in building my portfolio in biostatistics.
+
+
 ##  R Packages Used
 - `meta`
 - `metafor`
