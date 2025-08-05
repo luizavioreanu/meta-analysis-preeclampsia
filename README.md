@@ -39,8 +39,16 @@ This repository contains the code and dataset for a meta-analysis based on 9 pub
 
 ##  Visualization
 - Forest plot and QQ plot generated using `meta` and `metafor` packages
+This forest plot visualizes the individual study odds ratios and the combined estimate:
 
-- Funnel plot analysis included via statistical tests and `trimfill`
+![Forest Plot](output/forest_plot.png)
+
+##  QQ Plot
+
+Residual analysis to check normality of standardized effects:
+
+![QQ Plot](output/qq_plot.png)
+
 
 ## Interpretation
 This meta-analysis provides statistically significant evidence supporting the treatment’s effectiveness in reducing preeclampsia risk. However, due to the high heterogeneity (I² > 70%), interpretation should be made using the random-effects model. No clear evidence of publication bias was found, though one potentially missing study was suggested by the trim-and-fill method.
